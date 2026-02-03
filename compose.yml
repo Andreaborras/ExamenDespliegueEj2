@@ -1,12 +1,12 @@
 services:
   db:
-    image: anboes/sqlpinacoteca:v1
+    image: anboes/mi_cine:v1
     container_name: pinacotecaDB
     ports:
       - "3306:3306"
 
   web:
-    image: anboes/phppinacoteca:v1
+    image: anboes/mi_app_cine:v1
     container_name: pinacotecaWEB
     ports:
       - "8080:80"

@@ -47,6 +47,7 @@ jobs:
           key: ${{ secrets.REMOTE_KEY }}
           script: |
             cd ~/deploy
+            docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
             docker compose down || true
             docker compose pull
             docker compose up -d
