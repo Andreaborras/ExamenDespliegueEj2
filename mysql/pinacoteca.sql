@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS cuadros (
     nombre VARCHAR(100),
     autor VARCHAR(100),
     anyo INT(4),
-    periodo VARCHAR(100),
+    periodo VARCHAR(100),git commit -m "Renombrar Dockerfile correctamente"
     ubicacion VARCHAR(100),
     imagen MEDIUMTEXT
 );
